@@ -27,8 +27,8 @@ module Registers(   input Clk,
 					input [4:0] WriteRegister, 
 					input [31:0] WriteData, 
 					input RegWrite,
-					output [31:0] ReadDataA, 
-					output [31:0] ReadDataB
+					output reg [31:0] ReadDataA, 
+					output reg [31:0] ReadDataB
 					);
 
 //Lista de 32 registros de 32 bits c/u
@@ -44,12 +44,18 @@ always@(posedge Clk) begin
 	else begin
 		if(RegWrite) 	begin 	array[WriteRegister] <= WriteData; 				end
 	end
+
+end
+
+always@(negedge Clk) begin
+	ReadDataA <= array[ReadRegisterA];
+    ReadDataB <= array[ReadRegisterB];
 end
 
 //Siempre se redirecciona a ReadDataA y ReadDataB lo que hay en el 
 //array apuntado por sus respectivos punteros (ReadRegisterA y ReadRegisterB)
-assign ReadDataA = array[ReadRegisterA];
-assign ReadDataB = array[ReadRegisterB];
-					
+//assign ReadDataA = array[ReadRegisterA];
+//assign ReadDataB = array[ReadRegisterB];
+
 
 endmodule

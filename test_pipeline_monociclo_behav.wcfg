@@ -11,26 +11,26 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="265569999fs"></ZoomStartTime>
-      <ZoomEndTime time="643570000fs"></ZoomEndTime>
-      <Cursor1Time time="457570000fs"></Cursor1Time>
+      <ZoomStartTime time="373880000fs"></ZoomStartTime>
+      <ZoomEndTime time="525080001fs"></ZoomEndTime>
+      <Cursor1Time time="471480000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="214"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="95" />
+   <WVObjectSize size="74" />
    <wvobject fp_name="/test_pipeline_monociclo/Clk" type="logic">
       <obj_property name="ElementShortName">Clk</obj_property>
       <obj_property name="ObjectShortName">Clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/clk_50M/clk_out50Mhz" type="logic">
-      <obj_property name="ElementShortName">clk_out50Mhz</obj_property>
-      <obj_property name="ObjectShortName">clk_out50Mhz</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/clk_50M/clk_in100Mhz" type="logic">
       <obj_property name="ElementShortName">clk_in100Mhz</obj_property>
       <obj_property name="ObjectShortName">clk_in100Mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/clk_50M/clk_out50Mhz" type="logic">
+      <obj_property name="ElementShortName">clk_out50Mhz</obj_property>
+      <obj_property name="ObjectShortName">clk_out50Mhz</obj_property>
    </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/Latch_Reset" type="logic">
       <obj_property name="ElementShortName">Latch_Reset</obj_property>
@@ -140,14 +140,6 @@
       <obj_property name="ElementShortName">halt</obj_property>
       <obj_property name="ObjectShortName">halt</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E1_Halt/LEN" type="array">
-      <obj_property name="ElementShortName">LEN[31:0]</obj_property>
-      <obj_property name="ObjectShortName">LEN[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E2_ID/Reset" type="logic">
-      <obj_property name="ElementShortName">Reset</obj_property>
-      <obj_property name="ObjectShortName">Reset</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E2_ID/Stall" type="logic">
       <obj_property name="ElementShortName">Stall</obj_property>
       <obj_property name="ObjectShortName">Stall</obj_property>
@@ -204,18 +196,16 @@
    <wvobject fp_name="/test_pipeline_monociclo/uut/E2_ID/ControlFLAGS" type="array">
       <obj_property name="ElementShortName">ControlFLAGS[13:0]</obj_property>
       <obj_property name="ObjectShortName">ControlFLAGS[13:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E2_ID/Mux_To_Reg" type="array">
       <obj_property name="ElementShortName">Mux_To_Reg[4:0]</obj_property>
       <obj_property name="ObjectShortName">Mux_To_Reg[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E2_ID/Cero" type="array">
-      <obj_property name="ElementShortName">Cero[7:0]</obj_property>
-      <obj_property name="ObjectShortName">Cero[7:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/Ex_FLAGS" type="array">
       <obj_property name="ElementShortName">Ex_FLAGS[3:0]</obj_property>
       <obj_property name="ObjectShortName">Ex_FLAGS[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/Latch_ID_Ex_ReadDataA" type="array">
       <obj_property name="ElementShortName">Latch_ID_Ex_ReadDataA[31:0]</obj_property>
@@ -253,21 +243,9 @@
       <obj_property name="ElementShortName">Mux_WB[31:0]</obj_property>
       <obj_property name="ObjectShortName">Mux_WB[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/ForwardA" type="array">
-      <obj_property name="ElementShortName">ForwardA[1:0]</obj_property>
-      <obj_property name="ObjectShortName">ForwardA[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/ForwardB" type="array">
-      <obj_property name="ElementShortName">ForwardB[1:0]</obj_property>
-      <obj_property name="ObjectShortName">ForwardB[1:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/E3_ALUOut" type="array">
       <obj_property name="ElementShortName">E3_ALUOut[31:0]</obj_property>
       <obj_property name="ObjectShortName">E3_ALUOut[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/E3_ALU_Zero" type="logic">
-      <obj_property name="ElementShortName">E3_ALU_Zero</obj_property>
-      <obj_property name="ObjectShortName">E3_ALU_Zero</obj_property>
    </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/E3_MuxOut" type="array">
       <obj_property name="ElementShortName">E3_MuxOut[4:0]</obj_property>
@@ -286,33 +264,9 @@
       <obj_property name="ElementShortName">MUX_to_ALU[31:0]</obj_property>
       <obj_property name="ObjectShortName">MUX_to_ALU[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/Shift_Ctrl_ALU" type="array">
-      <obj_property name="ElementShortName">Shift_Ctrl_ALU[4:0]</obj_property>
-      <obj_property name="ObjectShortName">Shift_Ctrl_ALU[4:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/Mux_CortoA_Out_to_ALU_DataA" type="array">
       <obj_property name="ElementShortName">Mux_CortoA_Out_to_ALU_DataA[31:0]</obj_property>
       <obj_property name="ObjectShortName">Mux_CortoA_Out_to_ALU_DataA[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/ALUScr" type="array">
-      <obj_property name="ElementShortName">ALUScr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ALUScr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/RegDst" type="array">
-      <obj_property name="ElementShortName">RegDst[31:0]</obj_property>
-      <obj_property name="ObjectShortName">RegDst[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Clk" type="logic">
-      <obj_property name="ElementShortName">Clk</obj_property>
-      <obj_property name="ObjectShortName">Clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Reset" type="logic">
-      <obj_property name="ElementShortName">Reset</obj_property>
-      <obj_property name="ObjectShortName">Reset</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Latch_Ex_MEM_Zero" type="logic">
-      <obj_property name="ElementShortName">Latch_Ex_MEM_Zero</obj_property>
-      <obj_property name="ObjectShortName">Latch_Ex_MEM_Zero</obj_property>
    </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Mem_FLAGS" type="array">
       <obj_property name="ElementShortName">Mem_FLAGS[1:0]</obj_property>
@@ -323,14 +277,6 @@
       <obj_property name="ElementShortName">Latch_Ex_MEM_ALUOut[31:0]</obj_property>
       <obj_property name="ObjectShortName">Latch_Ex_MEM_ALUOut[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/dirMem" type="array">
-      <obj_property name="ElementShortName">dirMem[31:0]</obj_property>
-      <obj_property name="ObjectShortName">dirMem[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/memDebug" type="logic">
-      <obj_property name="ElementShortName">memDebug</obj_property>
-      <obj_property name="ObjectShortName">memDebug</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Latch_Ex_MEM_ReadDataB" type="array">
       <obj_property name="ElementShortName">Latch_Ex_MEM_ReadDataB[31:0]</obj_property>
       <obj_property name="ObjectShortName">Latch_Ex_MEM_ReadDataB[31:0]</obj_property>
@@ -339,37 +285,9 @@
       <obj_property name="ElementShortName">E4_DataOut[31:0]</obj_property>
       <obj_property name="ObjectShortName">E4_DataOut[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Mux_Add_To_Mem" type="array">
-      <obj_property name="ElementShortName">Mux_Add_To_Mem[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Mux_Add_To_Mem[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Mux_Enable_To_Mem" type="logic">
-      <obj_property name="ElementShortName">Mux_Enable_To_Mem</obj_property>
-      <obj_property name="ObjectShortName">Mux_Enable_To_Mem</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Mux_RW_To_Mem" type="array">
-      <obj_property name="ElementShortName">Mux_RW_To_Mem[3:0]</obj_property>
-      <obj_property name="ObjectShortName">Mux_RW_To_Mem[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/read" type="array">
-      <obj_property name="ElementShortName">read[3:0]</obj_property>
-      <obj_property name="ObjectShortName">read[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/memWrite_4bits" type="array">
-      <obj_property name="ElementShortName">memWrite_4bits[3:0]</obj_property>
-      <obj_property name="ObjectShortName">memWrite_4bits[3:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/enableMem" type="logic">
       <obj_property name="ElementShortName">enableMem</obj_property>
       <obj_property name="ObjectShortName">enableMem</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/MemWrite" type="array">
-      <obj_property name="ElementShortName">MemWrite[31:0]</obj_property>
-      <obj_property name="ObjectShortName">MemWrite[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/MemRead" type="array">
-      <obj_property name="ElementShortName">MemRead[31:0]</obj_property>
-      <obj_property name="ObjectShortName">MemRead[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E5_WB/InputA" type="array">
       <obj_property name="ElementShortName">InputA[31:0]</obj_property>

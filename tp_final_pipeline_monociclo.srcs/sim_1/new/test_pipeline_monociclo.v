@@ -45,6 +45,7 @@ module test_pipeline_monociclo;
         .count(count)
     );
     
+
 //    integer  file, status=0,addr_instruccion=0;
 //    reg [31:0] data=0;
 //    //flag de Branch/Jump
@@ -78,11 +79,10 @@ module test_pipeline_monociclo;
         #395;// arranca la ejecucion
         Etapa_IF_pc_reset = 0;
         Latch_Reset = 0; //  no se reinicia todos los latch
-        Latch_enable = 1; // se habilita PC
-
+        Latch_enable = 1; // se habilita PC 
     end
     
-        
+    
     always begin //clock de la placa 100Mhz
         #5 Clk=~Clk;
     end 

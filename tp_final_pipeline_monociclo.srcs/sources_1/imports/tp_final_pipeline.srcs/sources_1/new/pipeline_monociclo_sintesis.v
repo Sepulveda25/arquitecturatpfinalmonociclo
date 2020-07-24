@@ -276,7 +276,8 @@ Etapa2_ID_Modulo_Saltos E2_ID_Modulo_Saltos(
                     
 //---------------------------------  Etapa 3 "EX" + Latch EX/MEM    --------------------------------------------------
                       
-Etapa3_EX E3_EX(    //Inputs 11
+Etapa3_EX E3_EX(    //Inputs 12
+                    .Clk(Clk_50Mhz),
                     .Ex_FLAGS(ControlFLAGS[3:0]),//.Ex_FLAGS(Latch_ID_Ex_FLAGS),//{RegDst, ALUSrc, ALUOp1, ALUOp0} 
                     .Latch_ID_Ex_ReadDataA(E2_ReadDataA), //.Latch_ID_Ex_ReadDataA(Latch_ID_Ex_ReadDataA), 
                     .Latch_ID_Ex_ReadDataB(E2_ReadDataB),//.Latch_ID_Ex_ReadDataB(Latch_ID_Ex_ReadDataB),
@@ -363,26 +364,35 @@ Etapa4_MEM E4_MEM(   //Inputs
 
 //--------------------------------    Etapa 5 "WB"    ----------------------------------------------------------------
 
-MUX #(.LEN(32)) E5_WB(    //Inputs
-                        .InputA(E3_ALUOut),//.InputA(Latch_MEM_WB_ALUOut), //0
-                        .InputB(E4_DataOut_to_Latch_MEM_WB),//.InputB(Latch_MEM_WB_DataOut),//1 
-                        .SEL(ControlFLAGS[6]),//.SEL(Latch_MEM_WB_WriteBack_FLAGS_Out[MemtoReg]), 
-                        //Output
-                        .Out(Mux_WB)
-                     );
+//MUX #(.LEN(32)) E5_WB(    //Inputs
+//                        .InputA(E3_ALUOut),//.InputA(Latch_MEM_WB_ALUOut), //0
+//                        .InputB(E4_DataOut_to_Latch_MEM_WB),//.InputB(Latch_MEM_WB_DataOut),//1 
+//                        .SEL(ControlFLAGS[6]),//.SEL(Latch_MEM_WB_WriteBack_FLAGS_Out[MemtoReg]), 
+//                        //Output
+//                        .Out(Mux_WB)
+//                     );
                      
 //Se hace un OR entre los dos flags JALR y JAL                      
 //assign JALR_or_JAL = Latch_MEM_WB_flags_JALR_JAL[1] | Latch_MEM_WB_flags_JALR_JAL[0];
 assign JALR_or_JAL = flags_branch_jump[2] | flags_branch_jump[0];
 
 // Si la instruccion es JALR o JAL se selecciona la salida de PC_JALR_JAL para grabarlo en el regitro dado por 
-MUX #(.LEN(32)) mux_WB_JALR_JAL_PC(    //Inputs
-                                    .InputA(Mux_WB), //0
-                                    .InputB(ADDER_E2_PC_JALR_JAL),//.InputB(Latch_MEM_WB_PC_JALR_JAL),//1 
-                                    .SEL(JALR_or_JAL), 
-                                    //Output
-                                    .Out(Mux_WB_JALR_JAL)
-                                   );
+//MUX #(.LEN(32)) mux_WB_JALR_JAL_PC(    //Inputs
+//                                    .InputA(Mux_WB), //0
+//                                    .InputB(ADDER_E2_PC_JALR_JAL),//.InputB(Latch_MEM_WB_PC_JALR_JAL),//1 
+//                                    .SEL(JALR_or_JAL), 
+//                                    //Output
+//                                    .Out(Mux_WB_JALR_JAL)
+//                                   );
+
+Triple_MUX #(.LEN(32)) Mux_WB_JALR_JAL_PC(   //Inputs
+                                   .InputA(E3_ALUOut),//00
+                                   .InputB(ADDER_E2_PC_JALR_JAL),//10                
+                                   .InputC(E4_DataOut_to_Latch_MEM_WB),//01                         
+                                   .SEL({JALR_or_JAL,ControlFLAGS[6]}),                             
+                                   //Output
+                                   .Out(Mux_WB_JALR_JAL)                                            
+                               );
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //-------------------------        Unidad de CortoCircuito       ------------------------------------------------------

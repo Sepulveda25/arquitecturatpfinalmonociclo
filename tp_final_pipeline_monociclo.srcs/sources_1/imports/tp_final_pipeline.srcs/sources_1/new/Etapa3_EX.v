@@ -21,6 +21,7 @@
 
 
 module Etapa3_EX(   //Inputs 12
+                    input Clk,
                     input [3:0]		Ex_FLAGS,// {RegDst, ALUSrc, ALUOp1, ALUOp0} //ex [7:0]		Ex_FLAGS, // {JR , JALR, Jmp, JAL, RegDst, ALUSrc, ALUOp1, ALUOp0}
                     //input [31:0] 	Latch_ID_Ex_Adder_Out, 
                     input [31:0]    Latch_ID_Ex_ReadDataA, Latch_ID_Ex_ReadDataB,
@@ -72,6 +73,7 @@ ALU_Control E3_ALU_Control( //Inputs
                             .ALU_Control_Out(ALUControl_to_ALU)                                
                           ); 
 ALU E3_ALU( //Inputs
+            .Clk(Clk),
             .ALU_DataA(Mux_CortoA_Out_to_ALU_DataA), 
             .ALU_DataB(MUX_to_ALU), 
             .ALU_Control_Out(ALUControl_to_ALU),

@@ -22,6 +22,7 @@
 
 module ALU#(parameter LEN = 32)
             (//Inputs
+            input Clk,
             input [LEN-1:0] ALU_DataA, 
             input [LEN-1:0] ALU_DataB, 
             input [5:0] ALU_Control_Out, 
@@ -32,7 +33,8 @@ module ALU#(parameter LEN = 32)
             );
 assign Zero = (ALU_Out == 0); //se fija si es 0
 
-always@*
+//always@*
+always@(posedge Clk) 
 begin
     case (ALU_Control_Out)
         
