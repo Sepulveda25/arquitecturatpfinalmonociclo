@@ -46,12 +46,12 @@ localparam RegDst = 3;
 //Cables de Interconexion
 wire [5:0]  ALUControl_to_ALU;
 wire [31:0] MUX_to_ALU;
-wire [31:0] Shift_to_Add;
-wire [31:0] E3_WriteDataB;
+//wire [31:0] Shift_to_Add;
+//wire [31:0] E3_WriteDataB;
 wire [4:0]  Shift_Ctrl_ALU;
-wire [5:0]  InmCtrlOut_ALU;
+//wire [5:0]  InmCtrlOut_ALU;
 wire [31:0] Mux_CortoA_Out_to_ALU_DataA;
-wire [31:0] Mux_CortoB_Out_to_ALU_DataB;
+//wire [31:0] Mux_CortoB_Out_to_ALU_DataB;
 
 
 MUX Mux_AluSrc( //Inputs 

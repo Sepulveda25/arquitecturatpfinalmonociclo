@@ -1,0 +1,57 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 6a88cdf21b404479a82043049bcd4216 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_0 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_pipeline_monociclo_behav xil_defaultlib.test_pipeline_monociclo xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port write_enable [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:155]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port posReg [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:202]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 2 for port ForwardA [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:290]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 2 for port ForwardB [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:291]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.3/nightly/2017_10_04_2018833/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.Adder
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_output_stage(...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_output_stage(...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0(C_FAMILY="art...
+Compiling module xil_defaultlib.Instruction_memory
+Compiling module xil_defaultlib.Etapa1_IF
+Compiling module xil_defaultlib.Unidad_halt
+Compiling module xil_defaultlib.MUX(LEN=5)
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.MUX(LEN=8)
+Compiling module xil_defaultlib.Sign_Extend
+Compiling module xil_defaultlib.Etapa2_ID
+Compiling module xil_defaultlib.pc_jump
+Compiling module xil_defaultlib.Comparador_registros
+Compiling module xil_defaultlib.Etapa2_ID_Modulo_Saltos
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Triple_MUX
+Compiling module xil_defaultlib.Etapa3_EX
+Compiling module xil_defaultlib.MUX(LEN=1)
+Compiling module xil_defaultlib.MUX(LEN=4)
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_output_stage(...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_output_stage(...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0(C_FAMILY="art...
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Etapa4_MEM
+Compiling module xil_defaultlib.contador_clk(LEN=16)
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.pipeline_monociclo_sintesis
+Compiling module xil_defaultlib.test_pipeline_monociclo
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_pipeline_monociclo_behav

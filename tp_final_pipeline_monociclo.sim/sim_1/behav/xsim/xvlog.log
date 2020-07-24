@@ -1,0 +1,48 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Data_Memory/sim/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/sim/Instruction_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Comparador_registros.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparador_registros
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa1_IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Etapa1_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Etapa2_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID_Modulo_Saltos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Etapa2_ID_Modulo_Saltos
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa3_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Etapa3_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa4_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Etapa4_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Sign_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Triple_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Triple_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Unidad_halt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Unidad_halt
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/imports/Tp3_BIP/contador_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module contador_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pc_jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_jump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_monociclo_sintesis
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sim_1/new/test_pipeline_monociclo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_pipeline_monociclo

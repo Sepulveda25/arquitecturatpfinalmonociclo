@@ -41,7 +41,7 @@ module Etapa2_ID(   //Inputs 9
 //Cables de Interconexion
 wire [13:0] ControlFLAGS;
 wire [4:0] Mux_To_Reg;
-wire [31:0] Shift_to_Add;
+//wire [31:0] Shift_to_Add;
 
 //Variables
 reg [7:0] Cero=0; // [13:0] Cero=0

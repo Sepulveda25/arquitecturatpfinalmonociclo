@@ -136,10 +136,10 @@ wire Clk_50Mhz;
 //---------------------------------       Etapa 1 "IF" + Latch IF/ID   --------------------------------------------------
 reg Etapa_IF_Reset=0;
 reg Etapa_IF_enable_sel=1;
-reg Etapa_IF_Instr_in=0;
+//reg Etapa_IF_Instr_in=0;
 reg Etapa_IF_enable_mem=1;
-reg Etapa_IF_write_enable=0;
-reg Etapa_IF_Addr_Instr=0;
+//reg Etapa_IF_write_enable=0;
+//reg Etapa_IF_Addr_Instr=0;
 reg Etapa_IF_Addr_Src=0;
 
 Etapa1_IF E1_IF(    //Inputs 13
@@ -150,10 +150,10 @@ Etapa1_IF E1_IF(    //Inputs 13
                     .Stall(stall_or_halt),// detiene el PC si es 1
                     .enable_pc(Latch_enable),//.enable_pc(Etapa_IF_enable_pc),
                     .enable_sel(Etapa_IF_enable_sel),
-                    .Instr_in(Etapa_IF_Instr_in), //ingreso de instrucciones
+                    .Instr_in(0),//.Instr_in(Etapa_IF_Instr_in), //ingreso de instrucciones
                     .enable_mem(Etapa_IF_enable_mem),
-                    .write_enable(Etapa_IF_write_enable),
-                    .Addr_Instr(Etapa_IF_Addr_Instr), //ingreso de direccion de instrucciones
+                    .write_enable(0),//.write_enable(Etapa_IF_write_enable),
+                    .Addr_Instr(0),//.Addr_Instr(Etapa_IF_Addr_Instr), //ingreso de direccion de instrucciones
                     .Addr_Src(Etapa_IF_Addr_Src),
                     .pc_reset(Etapa_IF_pc_reset),
                     //Outputs 2
@@ -163,11 +163,11 @@ Etapa1_IF E1_IF(    //Inputs 13
                     );
 // Unidad que se encarga de detectar la instruccion halt y detener el avance PC. Tambien la señal va viajando por cada etapa de pipeline
 // y cuando llega a la etapa WB indica que ya se termino de ejecutar todas las instrucciones de previas al Halt el pipe ya se encotraria vacio                         
-reg halt_reset=0;
+//reg halt_reset=0;
 Unidad_halt E1_Halt (
                     //Inputs
                     .E1_InstrOut(E1_InstrOut),
-                    .Reset(halt_reset),
+                    .Reset(Latch_Reset),//.Reset(halt_reset),
                     //Output
                     .halt(halt)
                     );
@@ -189,17 +189,17 @@ assign stall_or_halt = halt;
 //                    );
                     
 //---------------------------------    Etapa 2 "ID" + Latch ID/Ex      --------------------------------------------------
-reg Etapa_ID_Reset=0;
-reg Etapa_ID_posReg=0;
+//reg Etapa_ID_Reset=0;
+//reg Etapa_ID_posReg=0;
 reg Etapa_ID_posSel=0;
 reg Stall=0; // no hay burbujas
                   
 Etapa2_ID E2_ID(    //Inputs 9
                     .Clk(Clk_50Mhz), 
-                    .Reset(Etapa_ID_Reset), 
+                    .Reset(Latch_Reset),//.Reset(Etapa_ID_Reset), 
                     .Stall(Stall),
                     .Latch_IF_ID_InstrOut(E1_InstrOut),//.Latch_IF_ID_InstrOut(Latch_IF_ID_InstrOut),
-                    .posReg(Etapa_ID_posReg), 
+                    .posReg(0), //.posReg(Etapa_ID_posReg), 
                     .posSel(Etapa_ID_posSel),
                     .Latch_MEM_WB_Mux(E3_MuxOut),//.Latch_MEM_WB_Mux(Latch_MEM_WB_Mux), //dato que se va a escribir en los registros
                     .Mux_WB(Mux_WB_JALR_JAL),//.Mux_WB(Mux_WB), 
@@ -287,6 +287,8 @@ Etapa3_EX E3_EX(    //Inputs 11
                     .Latch_ID_Ex_InmCtrl(E2_InmCtrl),//.Latch_ID_Ex_InmCtrl(Latch_ID_Ex_InmCtrl),
                     .Latch_Ex_MEM_ALUOut(E3_ALUOut),//.Latch_Ex_MEM_ALUOut(Latch_Ex_MEM_E3_ALUOut),
                     .Mux_WB(Mux_WB_JALR_JAL),//ex .Mux_WB(Mux_WB),
+                    .ForwardA(0),//NO hay unidad de corto
+                    .ForwardB(0),//NO hay unidad de corto
                     //Outputs 4
                     .E3_ALUOut(E3_ALUOut), 
                     .E3_MuxOut(E3_MuxOut), //salida de E3_MuxOut
@@ -320,7 +322,7 @@ Etapa3_EX E3_EX(    //Inputs 11
 //---------------------------------    Etapa 4 "MEM" + Latch MEM/WB    -----------------------------------------------
 reg Etapa_MEM_Reset=0;
 reg Latch_Ex_MEM_Zero=0;
-reg dirMem=0;
+//reg dirMem=0;
 reg memDebug=0;// no es modo debug
 
                
@@ -330,7 +332,7 @@ Etapa4_MEM E4_MEM(   //Inputs
                      .Latch_Ex_MEM_Zero(Latch_Ex_MEM_Zero),
                      .Mem_FLAGS(ControlFLAGS[5:4]),//.Mem_FLAGS(Latch_Ex_MEM_Mem_FLAGS_Out),//{MemRead, MemWrite} 
                      .Latch_Ex_MEM_ALUOut(E3_ALUOut),//.Latch_Ex_MEM_ALUOut(Latch_Ex_MEM_E3_ALUOut),
-                     .dirMem(dirMem), 
+                     .dirMem(0), //.dirMem(dirMem), 
                      .memDebug(memDebug),
                      .Latch_Ex_MEM_ReadDataB(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB),//.Latch_Ex_MEM_ReadDataB(Latch_Ex_MEM_ReadDataB),
                      //Outputs
@@ -406,7 +408,7 @@ MUX #(.LEN(32)) mux_WB_JALR_JAL_PC(    //Inputs
 //                                                .Stall(Stall)
 //                                             );
 //----------------------       Contador de ciclos     -----------------------------------------------------
-contador_clk #(.LEN(32)) Contador_Clk(//input
+contador_clk #(.LEN(16)) Contador_Clk(//input
                                     .clk(Clk_50Mhz), 
                                     .reset(Latch_Reset),//.reset(reset_contador_clk),
                                     .enable(Latch_MEM_WB_halt_and_enable_count),
