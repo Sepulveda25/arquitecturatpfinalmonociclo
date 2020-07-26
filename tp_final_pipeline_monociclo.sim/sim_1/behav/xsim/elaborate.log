@@ -34,7 +34,6 @@ Compiling module xil_defaultlib.Comparador_registros
 Compiling module xil_defaultlib.Etapa2_ID_Modulo_Saltos
 Compiling module xil_defaultlib.ALU_Control
 Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.Triple_MUX
 Compiling module xil_defaultlib.Etapa3_EX
 Compiling module xil_defaultlib.MUX(LEN=1)
 Compiling module xil_defaultlib.MUX(LEN=4)
@@ -45,6 +44,7 @@ Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_0.blk_mem_gen_v8_4_0(C_FAMILY="art...
 Compiling module xil_defaultlib.Data_Memory
 Compiling module xil_defaultlib.Etapa4_MEM
+Compiling module xil_defaultlib.Triple_MUX
 Compiling module xil_defaultlib.contador_clk(LEN=16)
 Compiling module unisims_ver.IBUF
 Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...

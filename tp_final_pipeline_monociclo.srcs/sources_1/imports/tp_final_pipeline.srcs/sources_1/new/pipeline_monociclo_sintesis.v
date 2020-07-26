@@ -292,8 +292,8 @@ Etapa3_EX E3_EX(    //Inputs 12
                     .ForwardB(0),//NO hay unidad de corto
                     //Outputs 4
                     .E3_ALUOut(E3_ALUOut), 
-                    .E3_MuxOut(E3_MuxOut), //salida de E3_MuxOut
-                    .MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB)
+                    .E3_MuxOut(E3_MuxOut) //salida de E3_MuxOut
+//                    .MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB)
                 );
                     
 

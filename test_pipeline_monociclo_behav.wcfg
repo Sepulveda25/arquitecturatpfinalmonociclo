@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="364000000fs"></ZoomStartTime>
-      <ZoomEndTime time="744000001fs"></ZoomEndTime>
-      <Cursor1Time time="556000000fs"></Cursor1Time>
+      <ZoomStartTime time="386410000fs"></ZoomStartTime>
+      <ZoomEndTime time="538410001fs"></ZoomEndTime>
+      <Cursor1Time time="485000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="214"></NameColumnWidth>
       <ValueColumnWidth column_width="68"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="66" />
+   <WVObjectSize size="76" />
    <wvobject fp_name="/test_pipeline_monociclo/Clk" type="logic">
       <obj_property name="ElementShortName">Clk</obj_property>
       <obj_property name="ObjectShortName">Clk</obj_property>
@@ -251,10 +251,6 @@
       <obj_property name="ElementShortName">E3_MuxOut[4:0]</obj_property>
       <obj_property name="ObjectShortName">E3_MuxOut[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB" type="array">
-      <obj_property name="ElementShortName">MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB[31:0]</obj_property>
-      <obj_property name="ObjectShortName">MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB[31:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/ALUControl_to_ALU" type="array">
       <obj_property name="ElementShortName">ALUControl_to_ALU[5:0]</obj_property>
       <obj_property name="ObjectShortName">ALUControl_to_ALU[5:0]</obj_property>
@@ -263,10 +259,6 @@
    <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/MUX_to_ALU" type="array">
       <obj_property name="ElementShortName">MUX_to_ALU[31:0]</obj_property>
       <obj_property name="ObjectShortName">MUX_to_ALU[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E3_EX/Mux_CortoA_Out_to_ALU_DataA" type="array">
-      <obj_property name="ElementShortName">Mux_CortoA_Out_to_ALU_DataA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Mux_CortoA_Out_to_ALU_DataA[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/Mem_FLAGS" type="array">
       <obj_property name="ElementShortName">Mem_FLAGS[1:0]</obj_property>
@@ -288,5 +280,54 @@
    <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/enableMem" type="logic">
       <obj_property name="ElementShortName">enableMem</obj_property>
       <obj_property name="ObjectShortName">enableMem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/DataMemory/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/DataMemory/rsta" type="logic">
+      <obj_property name="ElementShortName">rsta</obj_property>
+      <obj_property name="ObjectShortName">rsta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/DataMemory/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/DataMemory/wea" type="array">
+      <obj_property name="ElementShortName">wea[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/DataMemory/addra" type="array">
+      <obj_property name="ElementShortName">addra[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/DataMemory/dina" type="array">
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/DataMemory/douta" type="array">
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/Mux_WB_JALR_JAL_PC/InputA" type="array">
+      <obj_property name="ElementShortName">InputA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InputA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/Mux_WB_JALR_JAL_PC/InputB" type="array">
+      <obj_property name="ElementShortName">InputB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InputB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/Mux_WB_JALR_JAL_PC/InputC" type="array">
+      <obj_property name="ElementShortName">InputC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InputC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/Mux_WB_JALR_JAL_PC/SEL" type="array">
+      <obj_property name="ElementShortName">SEL[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SEL[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pipeline_monociclo/uut/Mux_WB_JALR_JAL_PC/Out" type="array">
+      <obj_property name="ElementShortName">Out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[31:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -33,8 +33,8 @@ module ALU#(parameter LEN = 32)
             );
 assign Zero = (ALU_Out == 0); //se fija si es 0
 
-//always@*
-always@(posedge Clk) 
+always@*
+//always@(posedge Clk) 
 begin
     case (ALU_Control_Out)
         

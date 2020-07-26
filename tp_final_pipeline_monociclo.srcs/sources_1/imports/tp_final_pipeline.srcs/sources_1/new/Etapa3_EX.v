@@ -35,9 +35,9 @@ module Etapa3_EX(   //Inputs 12
                     input [1:0]		ForwardB,				//Wire externo!! (de la Unidad de Cortocircuito)
                     //Outputs 5
                     output [31:0]   E3_ALUOut,
-                    output 			E3_ALU_Zero,
-                    output [4:0] 	E3_MuxOut,
-                    output [31:0] 	MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB
+//                    output 			E3_ALU_Zero,
+                    output [4:0] 	E3_MuxOut
+                   // output [31:0]   Latch_ID_Ex_ReadDataB//output [31:0] 	MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB
                 );
                 
 //Variables
@@ -56,8 +56,8 @@ wire [31:0] Mux_CortoA_Out_to_ALU_DataA;
 
 
 MUX Mux_AluSrc( //Inputs 
-                .InputA(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB), 
-                .InputB(Latch_ID_Ex_SignExtendOut),
+                .InputA(Latch_ID_Ex_ReadDataB),//.InputA(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB), 
+                .InputB(Latch_ID_Ex_SignExtendOut), //inmediato extendido de signo
                 .SEL(Ex_FLAGS[ALUScr]), 
                 //Output
                 .Out(MUX_to_ALU)
@@ -74,7 +74,7 @@ ALU_Control E3_ALU_Control( //Inputs
                           ); 
 ALU E3_ALU( //Inputs
             .Clk(Clk),
-            .ALU_DataA(Mux_CortoA_Out_to_ALU_DataA), 
+            .ALU_DataA(Latch_ID_Ex_ReadDataA),//.ALU_DataA(Mux_CortoA_Out_to_ALU_DataA), 
             .ALU_DataB(MUX_to_ALU), 
             .ALU_Control_Out(ALUControl_to_ALU),
             .Shift(Shift_Ctrl_ALU),
@@ -91,23 +91,23 @@ MUX #(.LEN(5)) Mux_RegDst(  //Inputs
                             .Out(E3_MuxOut)
                          );
                              
-Triple_MUX #(.LEN(32)) Mux_CortoA(   //Inputs
-                                    .InputA(Latch_ID_Ex_ReadDataA),
-                                    .InputB(Latch_Ex_MEM_ALUOut),           //Wire externo!! (del Latch "EX/MEM")
-                                    .InputC(Mux_WB),                        //Wire externo!! (del Mux WB de la Etapa 5 "WB")
-                                    .SEL(ForwardA),                         //Wire externo!! (de la Unidad de Cortocircuito)
-                                    //Output
-                                    .Out(Mux_CortoA_Out_to_ALU_DataA)                                            
-                                );
+//Triple_MUX #(.LEN(32)) Mux_CortoA(   //Inputs
+//                                    .InputA(Latch_ID_Ex_ReadDataA),
+//                                    .InputB(Latch_Ex_MEM_ALUOut),           //Wire externo!! (del Latch "EX/MEM")
+//                                    .InputC(Mux_WB),                        //Wire externo!! (del Mux WB de la Etapa 5 "WB")
+//                                    .SEL(ForwardA),                         //Wire externo!! (de la Unidad de Cortocircuito)
+//                                    //Output
+//                                    .Out(Mux_CortoA_Out_to_ALU_DataA)                                            
+//                                );
 
-Triple_MUX #(.LEN(32)) Mux_CortoB(   //Inputs
-                                    .InputA(Latch_ID_Ex_ReadDataB),
-                                    .InputB(Latch_Ex_MEM_ALUOut),               //Wire externo!! (del Latch "EX/MEM")
-                                    .InputC(Mux_WB),                            //Wire externo!! (del Mux WB de la Etapa 5 "WB")
-                                    .SEL(ForwardB),                             //Wire externo!! (de la Unidad de Cortocircuito)
-                                    //Output
-                                    .Out(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB)                                            
-                                );
+//Triple_MUX #(.LEN(32)) Mux_CortoB(   //Inputs
+//                                    .InputA(Latch_ID_Ex_ReadDataB),
+//                                    .InputB(Latch_Ex_MEM_ALUOut),               //Wire externo!! (del Latch "EX/MEM")
+//                                    .InputC(Mux_WB),                            //Wire externo!! (del Mux WB de la Etapa 5 "WB")
+//                                    .SEL(ForwardB),                             //Wire externo!! (de la Unidad de Cortocircuito)
+//                                    //Output
+//                                    .Out(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB)                                            
+//                                );
 
                  
           
