@@ -2,8 +2,8 @@
 # Webtalk v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Sat Jul 25 21:19:34 2020
-# Process ID: 2328
+# Start of session at: Sat Jul 25 21:18:34 2020
+# Process ID: 6028
 # Current directory: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.sim/sim_1/behav/xsim/xsim.dir/test_pipeline_monociclo_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.sim/sim_1/behav/xsim/webtalk.log
@@ -14,4 +14,4 @@ invalid command name "%"
     while executing
 "% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
     (file "E:/Facultad/Arquitectura" line 1)
-INFO: [Common 17-206] Exiting Webtalk at Sat Jul 25 21:19:34 2020...
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 25 21:18:34 2020...

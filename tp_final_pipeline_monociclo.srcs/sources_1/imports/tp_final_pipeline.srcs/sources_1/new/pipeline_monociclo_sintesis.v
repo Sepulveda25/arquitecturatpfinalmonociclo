@@ -335,7 +335,7 @@ Etapa4_MEM E4_MEM(   //Inputs
                      .Latch_Ex_MEM_ALUOut(E3_ALUOut),//.Latch_Ex_MEM_ALUOut(Latch_Ex_MEM_E3_ALUOut),
                      .dirMem(0), //.dirMem(dirMem), 
                      .memDebug(memDebug),
-                     .Latch_Ex_MEM_ReadDataB(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB),//.Latch_Ex_MEM_ReadDataB(Latch_Ex_MEM_ReadDataB),
+                     .Latch_Ex_MEM_ReadDataB(E2_ReadDataB),///.Latch_Ex_MEM_ReadDataB(MuxCortoB_to_MuxAULScr_Latch_EX_MEM_DataB),//.Latch_Ex_MEM_ReadDataB(Latch_Ex_MEM_ReadDataB),
                      //Outputs
                      .E4_DataOut(E4_DataOut_to_Latch_MEM_WB)  
                  );

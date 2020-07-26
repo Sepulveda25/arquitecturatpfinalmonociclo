@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="373880000fs"></ZoomStartTime>
-      <ZoomEndTime time="525080001fs"></ZoomEndTime>
-      <Cursor1Time time="471480000fs"></Cursor1Time>
+      <ZoomStartTime time="364000000fs"></ZoomStartTime>
+      <ZoomEndTime time="744000001fs"></ZoomEndTime>
+      <Cursor1Time time="556000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="214"></NameColumnWidth>
-      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+      <ValueColumnWidth column_width="68"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="74" />
+   <WVObjectSize size="66" />
    <wvobject fp_name="/test_pipeline_monociclo/Clk" type="logic">
       <obj_property name="ElementShortName">Clk</obj_property>
       <obj_property name="ObjectShortName">Clk</obj_property>
@@ -288,37 +288,5 @@
    <wvobject fp_name="/test_pipeline_monociclo/uut/E4_MEM/enableMem" type="logic">
       <obj_property name="ElementShortName">enableMem</obj_property>
       <obj_property name="ObjectShortName">enableMem</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E5_WB/InputA" type="array">
-      <obj_property name="ElementShortName">InputA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">InputA[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E5_WB/InputB" type="array">
-      <obj_property name="ElementShortName">InputB[31:0]</obj_property>
-      <obj_property name="ObjectShortName">InputB[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E5_WB/SEL" type="logic">
-      <obj_property name="ElementShortName">SEL</obj_property>
-      <obj_property name="ObjectShortName">SEL</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/E5_WB/Out" type="array">
-      <obj_property name="ElementShortName">Out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Out[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/mux_WB_JALR_JAL_PC/InputA" type="array">
-      <obj_property name="ElementShortName">InputA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">InputA[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/mux_WB_JALR_JAL_PC/InputB" type="array">
-      <obj_property name="ElementShortName">InputB[31:0]</obj_property>
-      <obj_property name="ObjectShortName">InputB[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/mux_WB_JALR_JAL_PC/SEL" type="logic">
-      <obj_property name="ElementShortName">SEL</obj_property>
-      <obj_property name="ObjectShortName">SEL</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_pipeline_monociclo/uut/mux_WB_JALR_JAL_PC/Out" type="array">
-      <obj_property name="ElementShortName">Out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Out[31:0]</obj_property>
    </wvobject>
 </wave_config>

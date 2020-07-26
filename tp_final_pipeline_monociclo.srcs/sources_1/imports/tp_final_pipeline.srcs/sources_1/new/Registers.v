@@ -39,18 +39,16 @@ integer j;
 
 //Si ocurre un Reset, se vuelven todos los valores de array a sus valores iniciales (0)
 //Sino si llega el FLAG de RegWrite (de la Unidad de Control) entonces se guarda en el array el resultado (WriteData)
-always@(posedge Clk) begin
+always@(negedge Clk) begin
+    #0.1;
 	if(Reset) 			begin		for(j = 0; j < 32; j = j+1)	array[j] <= 0;	end 
 	else begin
 		if(RegWrite) 	begin 	array[WriteRegister] <= WriteData; 				end
 	end
-
-end
-
-always@(negedge Clk) begin
-	ReadDataA <= array[ReadRegisterA];
+    ReadDataA <= array[ReadRegisterA];
     ReadDataB <= array[ReadRegisterB];
 end
+
 
 //Siempre se redirecciona a ReadDataA y ReadDataB lo que hay en el 
 //array apuntado por sus respectivos punteros (ReadRegisterA y ReadRegisterB)
