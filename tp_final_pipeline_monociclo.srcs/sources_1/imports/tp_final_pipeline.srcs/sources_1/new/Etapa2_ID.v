@@ -65,7 +65,8 @@ Registers Regs(	//Inputs
                 .ReadDataA(E2_ReadDataA), 
                 .ReadDataB(E2_ReadDataB));
 							
-Control_Unit Control(   .OpCode(Latch_IF_ID_InstrOut[31:26]),
+Control_Unit Control(   .Clk(Clk),
+                        .OpCode(Latch_IF_ID_InstrOut[31:26]),
                         .funcion(Latch_IF_ID_InstrOut[5:0]),
                         .ControlFLAGS(ControlFLAGS),// los 6 bits mas altos son flags de branch y jump
                         .InmCtrl(E2_InmCtrl));

@@ -51,7 +51,9 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 
-module Control_Unit(        input 		[5:0] OpCode,
+module Control_Unit(        
+                            input       Clk,
+                            input 		[5:0] OpCode,
                             input       [5:0] funcion, 
 							output 		[13:0] ControlFLAGS,
 							output reg	[2:0] InmCtrl
@@ -61,7 +63,8 @@ module Control_Unit(        input 		[5:0] OpCode,
 
 reg BranchEQ, BranchNE, JR , JALR, Jmp, JAL, RegWrite, MemtoReg,  MemRead, MemWrite, RegDst, ALUSrc, ALUOp1, ALUOp0;
 
-always@* begin
+always@(OpCode) begin
+//always@* begin
 	case(OpCode)
 		//R-Format
 		6'b000000: 	begin

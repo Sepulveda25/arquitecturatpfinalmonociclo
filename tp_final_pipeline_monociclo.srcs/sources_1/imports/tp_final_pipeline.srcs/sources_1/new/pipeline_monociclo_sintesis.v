@@ -328,7 +328,7 @@ reg memDebug=0;// no es modo debug
 
                
 Etapa4_MEM E4_MEM(   //Inputs
-                     .Clk(Clk_50Mhz), 
+                     .Clk(~Clk_50Mhz), 
                      .Reset(Etapa_MEM_Reset), 
                      .Latch_Ex_MEM_Zero(Latch_Ex_MEM_Zero),
                      .Mem_FLAGS(ControlFLAGS[5:4]),//.Mem_FLAGS(Latch_Ex_MEM_Mem_FLAGS_Out),//{MemRead, MemWrite} 
@@ -439,6 +439,6 @@ clk_wiz_0 clk_50M
     // Clock out ports  
     .clk_out50Mhz(Clk_50Mhz)
 );
-    
-    
+
+
 endmodule

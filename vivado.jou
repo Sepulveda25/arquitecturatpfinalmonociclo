@@ -31,3 +31,45 @@ relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
+save_wave_config {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/test_pipeline_monociclo_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/test_pipeline_monociclo_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+open_bd_design {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/bd/InstrMem/InstrMem.bd}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name clk_wiz_desf -dir {e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {clk_wiz_desf} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.000} CONFIG.CLKOUT1_REQUESTED_PHASE {1.8} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {23.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {23.875} CONFIG.MMCM_CLKOUT0_PHASE {1.885} CONFIG.CLKOUT1_JITTER {155.499} CONFIG.CLKOUT1_PHASE_ERROR {152.174}] [get_ips clk_wiz_desf]
+generate_target {instantiation_template} [get_files {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}]
+generate_target all [get_files  {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}]
+catch { config_ip_cache -export [get_ips -all clk_wiz_desf] }
+export_ip_user_files -of_objects [get_files {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}]
+launch_runs -jobs 4 clk_wiz_desf_synth_1
+export_simulation -of_objects [get_files {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}] -directory {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.ip_user_files/sim_scripts} -ip_user_files_dir {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.ip_user_files} -ipstatic_source_dir {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/modelsim} {questa=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/questa} {riviera=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/riviera} {activehdl=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+add_wave {{/test_pipeline_monociclo/uut/clk_des}} 
+relaunch_sim
+set_property -dict [list CONFIG.USE_PHASE_ALIGNMENT {false} CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG}] [get_ips clk_wiz_desf]
+generate_target all [get_files  {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}]
+catch { config_ip_cache -export [get_ips -all clk_wiz_desf] }
+export_ip_user_files -of_objects [get_files {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}] -no_script -sync -force -quiet
+reset_run clk_wiz_desf_synth_1
+launch_runs -jobs 4 clk_wiz_desf_synth_1
+export_simulation -of_objects [get_files {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}] -directory {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.ip_user_files/sim_scripts} -ip_user_files_dir {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.ip_user_files} -ipstatic_source_dir {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/modelsim} {questa=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/questa} {riviera=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/riviera} {activehdl=E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+export_ip_user_files -of_objects  [get_files {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset clk_wiz_desf {{e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf/clk_wiz_desf.xci}}
+file delete -force {e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_desf}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
