@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Jul 26 02:17:11 2020
+# Process ID: 14660
+# Current directory: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/clk_wiz_1_synth_1
+# Command line: vivado.exe -log clk_wiz_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_1.tcl
+# Log file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/clk_wiz_1_synth_1/clk_wiz_1.vds
+# Journal file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/clk_wiz_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_1.tcl -notrace

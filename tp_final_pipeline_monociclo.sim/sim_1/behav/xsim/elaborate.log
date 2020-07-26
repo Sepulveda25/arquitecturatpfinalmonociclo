@@ -51,6 +51,9 @@ Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
 Compiling module unisims_ver.BUFG
 Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
 Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module xil_defaultlib.clk_wiz_1_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_1
 Compiling module xil_defaultlib.pipeline_monociclo_sintesis
 Compiling module xil_defaultlib.test_pipeline_monociclo
 Compiling module xil_defaultlib.glbl

@@ -325,10 +325,10 @@ reg Etapa_MEM_Reset=0;
 reg Latch_Ex_MEM_Zero=0;
 //reg dirMem=0;
 reg memDebug=0;// no es modo debug
-
+wire Clk_neg;
                
 Etapa4_MEM E4_MEM(   //Inputs
-                     .Clk(~Clk_50Mhz), 
+                     .Clk(Clk_neg), 
                      .Reset(Etapa_MEM_Reset), 
                      .Latch_Ex_MEM_Zero(Latch_Ex_MEM_Zero),
                      .Mem_FLAGS(ControlFLAGS[5:4]),//.Mem_FLAGS(Latch_Ex_MEM_Mem_FLAGS_Out),//{MemRead, MemWrite} 
@@ -438,6 +438,15 @@ clk_wiz_0 clk_50M
     .clk_in100Mhz(Clk),
     // Clock out ports  
     .clk_out50Mhz(Clk_50Mhz)
+);
+
+/// clock 
+clk_wiz_1 clk_neg
+(
+    // Clock in ports
+    .clk_in1(Clk),
+    // Clock out ports  
+    .clk_out1(Clk_neg)
 );
 
 
