@@ -35,7 +35,7 @@ module test_pipeline_monociclo;
     // Instantiate the Unit Under Test (UUT)
     pipeline_monociclo_sintesis uut (
         //Inputs
-        .Clk(Clk), 
+        .Clk(Clk),
         .Latch_Reset(Latch_Reset),
         .Latch_enable(Latch_enable),
         //Etapa IF

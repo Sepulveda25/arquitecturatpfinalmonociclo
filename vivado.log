@@ -5444,3 +5444,14 @@ Block Memory Generator module test_pipeline_monociclo.uut.E1_IF.InstrMem.inst.na
 Block Memory Generator module test_pipeline_monociclo.uut.E4_MEM.DataMemory.inst.native_mem_mapped_module.blk_mem_gen_v8_4_0_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
 relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1504.098 ; gain = 0.000
 save_wave_config {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/test_pipeline_monociclo_behav.wcfg}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Data_Memory/Data_Memory.xci' is already up-to-date
+[Sun Jul 26 02:39:37 2020] Launched synth_1...
+Run output will be captured here: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit

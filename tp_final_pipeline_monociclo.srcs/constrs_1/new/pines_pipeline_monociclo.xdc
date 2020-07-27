@@ -31,10 +31,12 @@ set_property PACKAGE_PIN U19 [get_ports {count[2]}]
 set_property PACKAGE_PIN E19 [get_ports {count[1]}]
 set_property PACKAGE_PIN U16 [get_ports {count[0]}]
 set_property IOSTANDARD LVCMOS18 [get_ports Clk]
-set_property PACKAGE_PIN W5 [get_ports Clk]
 set_property PACKAGE_PIN W19 [get_ports Etapa_IF_pc_reset]
 set_property IOSTANDARD LVCMOS18 [get_ports Etapa_IF_pc_reset]
 set_property PACKAGE_PIN V17 [get_ports Latch_enable]
 set_property PACKAGE_PIN T17 [get_ports Latch_Reset]
 set_property IOSTANDARD LVCMOS18 [get_ports Latch_enable]
 set_property IOSTANDARD LVCMOS18 [get_ports Latch_Reset]
+
+
+set_property PACKAGE_PIN W5 [get_ports Clk]

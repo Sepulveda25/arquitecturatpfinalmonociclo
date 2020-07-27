@@ -2,11 +2,11 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Jul 23 02:12:05 2020
-# Process ID: 4744
-# Current directory: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1
+# Start of session at: Mon Jul 27 00:33:44 2020
+# Process ID: 10224
+# Current directory: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1
 # Command line: vivado.exe -log pipeline_monociclo_sintesis.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_monociclo_sintesis.tcl
-# Log file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/pipeline_monociclo_sintesis.vds
-# Journal file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1\vivado.jou
+# Log file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/pipeline_monociclo_sintesis.vds
+# Journal file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source pipeline_monociclo_sintesis.tcl -notrace

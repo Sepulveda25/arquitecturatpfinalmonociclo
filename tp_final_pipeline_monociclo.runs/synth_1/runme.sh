@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1'
+HD_PWD='E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

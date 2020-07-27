@@ -2,12 +2,12 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Jul 23 02:12:05 2020
-# Process ID: 4744
-# Current directory: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1
+# Start of session at: Mon Jul 27 00:33:44 2020
+# Process ID: 10224
+# Current directory: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1
 # Command line: vivado.exe -log pipeline_monociclo_sintesis.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_monociclo_sintesis.tcl
-# Log file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/pipeline_monociclo_sintesis.vds
-# Journal file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1\vivado.jou
+# Log file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/pipeline_monociclo_sintesis.vds
+# Journal file: E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source pipeline_monociclo_sintesis.tcl -notrace
 Command: synth_design -top pipeline_monociclo_sintesis -part xc7a35tcpg236-1
@@ -15,24 +15,24 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8736 
+INFO: Helper process launched with PID 11928 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 394.219 ; gain = 96.984
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 394.188 ; gain = 96.590
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'pipeline_monociclo_sintesis' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:23]
+INFO: [Synth 8-638] synthesizing module 'pipeline_monociclo_sintesis' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:23]
 	Parameter RegWrite bound to: 1 - type: integer 
 	Parameter MemtoReg bound to: 0 - type: integer 
 	Parameter MemRead bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'Etapa1_IF' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa1_IF.v:23]
-INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ProgramCounter.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ProgramCounter.v:23]
-INFO: [Synth 8-638] synthesizing module 'MUX' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'Etapa1_IF' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa1_IF.v:23]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ProgramCounter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ProgramCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
 	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MUX' (2#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
-INFO: [Synth 8-638] synthesizing module 'Adder' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (2#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'Adder' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Adder.v:23]
 	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Adder' (3#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Adder.v:23]
-INFO: [Synth 8-638] synthesizing module 'Instruction_memory' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/synth/Instruction_memory.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (3#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'Instruction_memory' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/synth/Instruction_memory.vhd:71]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -48,10 +48,10 @@ INFO: [Synth 8-638] synthesizing module 'Instruction_memory' [e:/Facultad/Arquit
 	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
 	Parameter C_ALGORITHM bound to: 1 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
-	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
-	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: Instruction_memory.mif - type: string 
 	Parameter C_INIT_FILE bound to: Instruction_memory.mem - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
 	Parameter C_HAS_RSTA bound to: 1 - type: integer 
 	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
@@ -106,71 +106,72 @@ INFO: [Synth 8-638] synthesizing module 'Instruction_memory' [e:/Facultad/Arquit
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.64395 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_0' declared at 'e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195312' bound to instance 'U0' of component 'blk_mem_gen_v8_4_0' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/synth/Instruction_memory.vhd:236]
-INFO: [Synth 8-256] done synthesizing module 'Instruction_memory' (12#1) [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/synth/Instruction_memory.vhd:71]
-INFO: [Synth 8-256] done synthesizing module 'Etapa1_IF' (13#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa1_IF.v:23]
-WARNING: [Synth 8-350] instance 'E1_IF' of module 'Etapa1_IF' requires 16 connections, but only 15 given [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:145]
-INFO: [Synth 8-638] synthesizing module 'Unidad_halt' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Unidad_halt.v:23]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_0' declared at 'e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195312' bound to instance 'U0' of component 'blk_mem_gen_v8_4_0' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/synth/Instruction_memory.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_memory' (12#1) [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/Instruction_memory/synth/Instruction_memory.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'Etapa1_IF' (13#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa1_IF.v:23]
+WARNING: [Synth 8-350] instance 'E1_IF' of module 'Etapa1_IF' requires 16 connections, but only 15 given [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:105]
+INFO: [Synth 8-638] synthesizing module 'Unidad_halt' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Unidad_halt.v:23]
 	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Unidad_halt' (14#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Unidad_halt.v:23]
-INFO: [Synth 8-638] synthesizing module 'Etapa2_ID' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID.v:23]
-INFO: [Synth 8-638] synthesizing module 'MUX__parameterized0' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Unidad_halt' (14#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Unidad_halt.v:23]
+INFO: [Synth 8-638] synthesizing module 'Etapa2_ID' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX__parameterized0' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
 	Parameter LEN bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized0' (14#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
-INFO: [Synth 8-638] synthesizing module 'Registers' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Registers' (15#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:23]
-INFO: [Synth 8-638] synthesizing module 'Control_Unit' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Control_Unit.v:54]
-INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (16#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Control_Unit.v:54]
-INFO: [Synth 8-638] synthesizing module 'MUX__parameterized1' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized0' (14#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'Registers' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:23]
+WARNING: [Synth 8-567] referenced signal 'RegWrite' should be on the sensitivity list [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:43]
+WARNING: [Synth 8-567] referenced signal 'WriteRegister' should be on the sensitivity list [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:43]
+WARNING: [Synth 8-567] referenced signal 'array' should be on the sensitivity list [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:52]
+INFO: [Synth 8-256] done synthesizing module 'Registers' (15#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Control_Unit.v:54]
+WARNING: [Synth 8-567] referenced signal 'funcion' should be on the sensitivity list [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Control_Unit.v:66]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (16#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Control_Unit.v:54]
+INFO: [Synth 8-638] synthesizing module 'MUX__parameterized1' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
 	Parameter LEN bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized1' (16#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
-INFO: [Synth 8-638] synthesizing module 'Sign_Extend' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized1' (16#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'Sign_Extend' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Sign_Extend.v:23]
 	Parameter LEN_output bound to: 32 - type: integer 
 	Parameter LEN_input bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Sign_Extend' (17#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Sign_Extend.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Etapa2_ID' (18#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID.v:23]
-INFO: [Synth 8-638] synthesizing module 'Etapa2_ID_Modulo_Saltos' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID_Modulo_Saltos.v:24]
-INFO: [Synth 8-638] synthesizing module 'pc_jump' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pc_jump.v:23]
-INFO: [Synth 8-256] done synthesizing module 'pc_jump' (19#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pc_jump.v:23]
-INFO: [Synth 8-638] synthesizing module 'Comparador_registros' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Comparador_registros.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Sign_Extend' (17#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Etapa2_ID' (18#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID.v:23]
+INFO: [Synth 8-638] synthesizing module 'Etapa2_ID_Modulo_Saltos' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID_Modulo_Saltos.v:24]
+INFO: [Synth 8-638] synthesizing module 'pc_jump' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pc_jump.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pc_jump' (19#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pc_jump.v:23]
+INFO: [Synth 8-638] synthesizing module 'Comparador_registros' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Comparador_registros.v:23]
 	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Comparador_registros' (20#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Comparador_registros.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Etapa2_ID_Modulo_Saltos' (21#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID_Modulo_Saltos.v:24]
-INFO: [Synth 8-638] synthesizing module 'Etapa3_EX' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa3_EX.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Comparador_registros' (20#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Comparador_registros.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Etapa2_ID_Modulo_Saltos' (21#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa2_ID_Modulo_Saltos.v:24]
+INFO: [Synth 8-638] synthesizing module 'Etapa3_EX' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa3_EX.v:23]
 	Parameter ALUScr bound to: 2 - type: integer 
 	Parameter RegDst bound to: 3 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'MUX__parameterized2' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX__parameterized2' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
 	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized2' (21#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
-INFO: [Synth 8-638] synthesizing module 'ALU_Control' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:35]
-INFO: [Synth 8-256] done synthesizing module 'ALU_Control' (22#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:35]
-INFO: [Synth 8-638] synthesizing module 'ALU' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized2' (21#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU_Control' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:35]
+INFO: [Synth 8-256] done synthesizing module 'ALU_Control' (22#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:35]
+INFO: [Synth 8-638] synthesizing module 'ALU' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU.v:23]
 	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ALU' (23#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU.v:23]
-INFO: [Synth 8-638] synthesizing module 'Triple_MUX' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Triple_MUX.v:23]
-	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Triple_MUX' (24#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Triple_MUX.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Etapa3_EX' (25#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa3_EX.v:23]
-WARNING: [Synth 8-350] instance 'E3_EX' of module 'Etapa3_EX' requires 16 connections, but only 13 given [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:279]
-INFO: [Synth 8-638] synthesizing module 'Etapa4_MEM' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa4_MEM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (23#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Etapa3_EX' (24#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa3_EX.v:23]
+INFO: [Synth 8-638] synthesizing module 'Etapa4_MEM' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa4_MEM.v:23]
 	Parameter MemWrite bound to: 0 - type: integer 
 	Parameter MemRead bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'MUX__parameterized3' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX__parameterized3' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
 	Parameter LEN bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized3' (25#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
-INFO: [Synth 8-638] synthesizing module 'MUX__parameterized4' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized3' (24#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX__parameterized4' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
 	Parameter LEN bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized4' (25#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
-INFO: [Synth 8-638] synthesizing module 'Data_Memory' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-4744-DESKTOP-I9AG1Q0/realtime/Data_Memory_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'Data_Memory' (26#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-4744-DESKTOP-I9AG1Q0/realtime/Data_Memory_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'Etapa4_MEM' (27#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa4_MEM.v:23]
-WARNING: [Synth 8-689] width (2) of port connection 'Mem_FLAGS' does not match port width (4) of module 'Etapa4_MEM' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:331]
-INFO: [Synth 8-638] synthesizing module 'contador_clk' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/imports/Tp3_BIP/contador_clk.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX__parameterized4' (24#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'Data_Memory' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-10224-DESKTOP-I9AG1Q0/realtime/Data_Memory_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Data_Memory' (25#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-10224-DESKTOP-I9AG1Q0/realtime/Data_Memory_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Etapa4_MEM' (26#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Etapa4_MEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'Triple_MUX' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Triple_MUX.v:23]
 	Parameter LEN bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'contador_clk' (28#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/imports/Tp3_BIP/contador_clk.v:21]
-WARNING: [Synth 8-689] width (16) of port connection 'count' does not match port width (32) of module 'contador_clk' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:414]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'Triple_MUX' (27#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Triple_MUX.v:23]
+INFO: [Synth 8-638] synthesizing module 'contador_clk' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/imports/Tp3_BIP/contador_clk.v:21]
+	Parameter LEN bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'contador_clk' (28#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/imports/Tp3_BIP/contador_clk.v:21]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:19468]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -180,12 +181,12 @@ INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.3/scripts/
 INFO: [Synth 8-256] done synthesizing module 'IBUF' (29#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:19468]
 INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25757]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_MULT_F bound to: 49.500000 - type: float 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
 	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 33.000000 - type: float 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
@@ -215,7 +216,7 @@ INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.3/sc
 	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
 	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
 	Parameter IS_PSEN_INVERTED bound to: 1'b0 
 	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
@@ -230,12 +231,11 @@ INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.3/sc
 INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (30#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25757]
 INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
 INFO: [Synth 8-256] done synthesizing module 'BUFG' (31#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (32#1) [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (33#1) [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
-INFO: [Synth 8-256] done synthesizing module 'pipeline_monociclo_sintesis' (34#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (32#1) [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (33#1) [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-256] done synthesizing module 'pipeline_monociclo_sintesis' (34#1) [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:23]
 WARNING: [Synth 8-3331] design Etapa4_MEM has unconnected port Latch_Ex_MEM_Zero
-WARNING: [Synth 8-3331] design Etapa4_MEM has unconnected port Mem_FLAGS[3]
-WARNING: [Synth 8-3331] design Etapa4_MEM has unconnected port Mem_FLAGS[2]
+WARNING: [Synth 8-3331] design ALU has unconnected port Clk
 WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_ID_Ex_InstrOut_25_0_instr_index[25]
 WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_ID_Ex_InstrOut_25_0_instr_index[24]
 WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_ID_Ex_InstrOut_25_0_instr_index[23]
@@ -262,80 +262,81 @@ WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_ID_Ex_InstrO
 WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_ID_Ex_InstrOut_25_0_instr_index[2]
 WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_ID_Ex_InstrOut_25_0_instr_index[1]
 WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_ID_Ex_InstrOut_25_0_instr_index[0]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[31]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[30]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[29]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[28]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[27]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[26]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[25]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[24]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[23]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[22]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[21]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[20]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[19]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[18]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[17]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[16]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[15]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[14]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[13]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[12]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[11]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[10]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[9]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[8]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[7]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[6]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[5]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[4]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[3]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[2]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[1]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Latch_Ex_MEM_ALUOut[0]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[31]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[30]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[29]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[28]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[27]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[26]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[25]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[24]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[23]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[22]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[21]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[20]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[19]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[18]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[17]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[16]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[15]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[14]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[13]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[12]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[11]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[10]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[9]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[8]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[7]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[6]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[5]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[4]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[3]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[2]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[1]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port Mux_WB[0]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port ForwardA[1]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port ForwardA[0]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port ForwardB[1]
+WARNING: [Synth 8-3331] design Etapa3_EX has unconnected port ForwardB[0]
 WARNING: [Synth 8-3331] design Etapa2_ID_Modulo_Saltos has unconnected port Clk
+WARNING: [Synth 8-3331] design Control_Unit has unconnected port Clk
+WARNING: [Synth 8-3331] design Registers has unconnected port Clk
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port CLKB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ENB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port REGCEB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port WEB[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port WEB[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port WEB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port WEB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[8]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[7]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[6]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[5]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[4]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[35]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[34]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[33]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[32]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[31]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[30]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[29]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[28]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[27]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[26]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[25]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[24]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[23]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[22]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[21]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[20]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[19]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[18]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[17]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[16]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[15]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[14]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[13]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[12]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[11]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[10]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[9]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[8]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[7]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[6]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[5]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[4]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SLEEP
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTSBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTDBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ECCPIPECE
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ram_rstram_b
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ram_rstreg_b
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEA[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[31]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[30]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[29]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[28]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[27]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:26 ; elapsed = 00:01:25 . Memory (MB): peak = 602.949 ; gain = 305.715
+Finished RTL Elaboration : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 602.840 ; gain = 305.242
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -344,12 +345,8 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin E3_EX:ForwardA[1] to constant 0 [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:279]
-WARNING: [Synth 8-3295] tying undriven pin E3_EX:ForwardA[0] to constant 0 [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:279]
-WARNING: [Synth 8-3295] tying undriven pin E3_EX:ForwardB[1] to constant 0 [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:279]
-WARNING: [Synth 8-3295] tying undriven pin E3_EX:ForwardB[0] to constant 0 [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/pipeline_monociclo_sintesis.v:279]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:26 ; elapsed = 00:01:25 . Memory (MB): peak = 602.949 ; gain = 305.715
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:24 ; elapsed = 00:01:24 . Memory (MB): peak = 602.840 ; gain = 305.242
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -358,44 +355,48 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-4744-DESKTOP-I9AG1Q0/dcp3/Data_Memory_in_context.xdc] for cell 'E4_MEM/DataMemory'
-Finished Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-4744-DESKTOP-I9AG1Q0/dcp3/Data_Memory_in_context.xdc] for cell 'E4_MEM/DataMemory'
-Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_50M/inst'
-Finished Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_50M/inst'
-Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_50M/inst'
-Finished Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_50M/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pipeline_monociclo_sintesis_propImpl.xdc].
+Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-10224-DESKTOP-I9AG1Q0/dcp3/Data_Memory_in_context.xdc] for cell 'E4_MEM/DataMemory'
+Finished Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/.Xil/Vivado-10224-DESKTOP-I9AG1Q0/dcp3/Data_Memory_in_context.xdc] for cell 'E4_MEM/DataMemory'
+Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_50M/inst'
+Finished Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_50M/inst'
+Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_50M/inst'
+Finished Parsing XDC File [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_50M/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pipeline_monociclo_sintesis_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/pipeline_monociclo_sintesis_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pipeline_monociclo_sintesis_propImpl.xdc].
+Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/constrs_1/new/pines_pipeline_monociclo.xdc]
+Finished Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/constrs_1/new/pines_pipeline_monociclo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/constrs_1/new/pines_pipeline_monociclo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pipeline_monociclo_sintesis_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pipeline_monociclo_sintesis_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pipeline_monociclo_sintesis_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/pipeline_monociclo_sintesis_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 757.672 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 734.055 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:39 ; elapsed = 00:01:39 . Memory (MB): peak = 757.672 ; gain = 460.438
+Finished Constraint Validation : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 734.055 ; gain = 436.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:39 ; elapsed = 00:01:39 . Memory (MB): peak = 757.672 ; gain = 460.438
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 734.055 ; gain = 436.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for clk_50M/inst. (constraint file  {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc}, line 14).
+Applied set_property DONT_TOUCH = true for clk_50M/inst. (constraint file  {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/dont_touch.xdc}, line 16).
 Applied set_property DONT_TOUCH = true for E1_IF/InstrMem. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for E4_MEM/DataMemory. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for clk_50M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 757.672 ; gain = 460.438
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 734.055 ; gain = 436.457
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "halt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "array_reg[31]" won't be mapped to RAM because it is too sparse
@@ -442,11 +443,43 @@ INFO: [Synth 8-5546] ROM "JALR" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "RegWrite" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "ALUOp1" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'halt_reg' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Unidad_halt.v:32]
-WARNING: [Synth 8-327] inferring latch for variable 'Shift_reg' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:51]
-WARNING: [Synth 8-327] inferring latch for variable 'ALU_Control_Out_reg' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'halt_reg' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Unidad_halt.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[31]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[30]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[29]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[28]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[27]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[26]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[25]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[24]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[23]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[22]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[21]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[20]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[19]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[18]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[17]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[16]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[15]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[14]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[13]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[12]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[11]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[10]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[9]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[8]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[7]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[6]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[5]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[4]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[3]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[2]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[1]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'array_reg[0]' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/Registers.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Shift_reg' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_Control_Out_reg' [E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.srcs/sources_1/imports/tp_final_pipeline.srcs/sources_1/new/ALU_Control.v:50]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:40 ; elapsed = 00:01:40 . Memory (MB): peak = 757.672 ; gain = 460.438
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 734.055 ; gain = 436.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -459,15 +492,14 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 5     
 	   3 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
-+---Registers : 
-	               32 Bit    Registers := 32    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 6     
-	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
 	   9 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
@@ -505,8 +537,6 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 1     
 Module Registers 
 Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 32    
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 32    
 Module Control_Unit 
@@ -544,10 +574,6 @@ Detailed RTL Component Info :
 	   3 Input     32 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
-Module Triple_MUX 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
 Module MUX__parameterized3 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -556,10 +582,14 @@ Module MUX__parameterized4
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 1     
+Module Triple_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
 Module contador_clk 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -583,79 +613,14 @@ INFO: [Synth 8-5546] ROM "E2_ID/Control/MemtoReg" won't be mapped to RAM because
 INFO: [Synth 8-5546] ROM "E2_ID/Control/MemRead" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "E2_ID/Control/MemWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "E1_Halt/halt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\E1_Halt/halt_reg )
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[31]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[30]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[29]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[28]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[27]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[26]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[25]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[24]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[23]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[22]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[21]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[20]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[19]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[18]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[17]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[16]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[15]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[14]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[13]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[12]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[11]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[10]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[9]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[8]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[7]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[6]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[5]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[4]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[3]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[2]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[1]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_IF/PC/Out_reg[0]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (E1_Halt/halt_reg) is unused and will be removed from module pipeline_monociclo_sintesis.
 WARNING: [Synth 8-3332] Sequential element (E3_EX/E3_ALU_Control/ALU_Control_Out_reg[5]) is unused and will be removed from module pipeline_monociclo_sintesis.
 WARNING: [Synth 8-3332] Sequential element (E3_EX/E3_ALU_Control/ALU_Control_Out_reg[4]) is unused and will be removed from module pipeline_monociclo_sintesis.
 WARNING: [Synth 8-3332] Sequential element (E3_EX/E3_ALU_Control/ALU_Control_Out_reg[3]) is unused and will be removed from module pipeline_monociclo_sintesis.
 WARNING: [Synth 8-3332] Sequential element (E3_EX/E3_ALU_Control/ALU_Control_Out_reg[2]) is unused and will be removed from module pipeline_monociclo_sintesis.
 WARNING: [Synth 8-3332] Sequential element (E3_EX/E3_ALU_Control/ALU_Control_Out_reg[1]) is unused and will be removed from module pipeline_monociclo_sintesis.
 WARNING: [Synth 8-3332] Sequential element (E3_EX/E3_ALU_Control/ALU_Control_Out_reg[0]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[31]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[30]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[29]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[28]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[27]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[26]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[25]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[24]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[23]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[22]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[21]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[20]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[19]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[18]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[17]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[16]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[15]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[14]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[13]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[12]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[11]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[10]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[9]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[8]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[7]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[6]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[5]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[4]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[3]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[2]) is unused and will be removed from module pipeline_monociclo_sintesis.
-WARNING: [Synth 8-3332] Sequential element (Contador_Clk/count_reg_reg[1]) is unused and will be removed from module pipeline_monociclo_sintesis.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:04 . Memory (MB): peak = 757.672 ; gain = 460.438
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 734.055 ; gain = 436.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -667,13 +632,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 757.672 ; gain = 460.438
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 755.023 ; gain = 457.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:21 ; elapsed = 00:02:24 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -685,7 +650,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Technology Mapping : Time (s): cpu = 00:02:02 ; elapsed = 00:02:04 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -709,7 +674,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished IO Insertion : Time (s): cpu = 00:02:04 ; elapsed = 00:02:05 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -722,7 +687,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:04 ; elapsed = 00:02:05 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -734,25 +699,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:04 ; elapsed = 00:02:05 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -770,22 +735,22 @@ Report Cell Usage:
 |      |Cell        |Count |
 +------+------------+------+
 |1     |Data_Memory |     1|
-|2     |BUFG        |     2|
-|3     |CARRY4      |    41|
-|4     |LUT1        |     1|
-|5     |LUT2        |   139|
-|6     |LUT3        |   106|
-|7     |LUT4        |   124|
-|8     |LUT5        |   217|
-|9     |LUT6        |  1142|
+|2     |BUFG        |    15|
+|3     |CARRY4      |    71|
+|4     |LUT1        |     6|
+|5     |LUT2        |   175|
+|6     |LUT3        |   143|
+|7     |LUT4        |   111|
+|8     |LUT5        |   144|
+|9     |LUT6        |  1218|
 |10    |MMCME2_ADV  |     1|
-|11    |MUXF7       |   309|
-|12    |MUXF8       |    16|
+|11    |MUXF7       |   314|
+|12    |MUXF8       |     4|
 |13    |RAMB18E1    |     1|
-|14    |FDCE        |     1|
-|15    |FDRE        |  1024|
-|16    |LDC         |     5|
-|17    |IBUF        |     2|
+|14    |FDCE        |    16|
+|15    |FDRE        |    32|
+|16    |LDC         |  1030|
+|17    |IBUF        |     4|
 |18    |OBUF        |    16|
 +------+------------+------+
 
@@ -793,46 +758,53 @@ Report Instance Areas:
 +------+------------------------------------------------------------------+------------------------------+------+
 |      |Instance                                                          |Module                        |Cells |
 +------+------------------------------------------------------------------+------------------------------+------+
-|1     |top                                                               |                              |  3179|
-|2     |  clk_50M                                                         |clk_wiz_0                     |     4|
-|3     |    inst                                                          |clk_wiz_0_clk_wiz             |     4|
-|4     |  Contador_Clk                                                    |contador_clk                  |     1|
-|5     |  E1_IF                                                           |Etapa1_IF                     |   628|
-|6     |    InstrMem                                                      |Instruction_memory            |     1|
-|7     |      U0                                                          |blk_mem_gen_v8_4_0            |     1|
-|8     |        inst_blk_mem_gen                                          |blk_mem_gen_v8_4_0_synth      |     1|
-|9     |          \gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen  |blk_mem_gen_top               |     1|
-|10    |            \valid.cstr                                           |blk_mem_gen_generic_cstr      |     1|
-|11    |              \ramloop[0].ram.r                                   |blk_mem_gen_prim_width        |     1|
-|12    |                \prim_init.ram                                    |blk_mem_gen_prim_wrapper_init |     1|
-|13    |  E2_ID                                                           |Etapa2_ID                     |  2321|
-|14    |    Regs                                                          |Registers                     |  2321|
-|15    |  E3_EX                                                           |Etapa3_EX                     |   175|
-|16    |    E3_ALU                                                        |ALU                           |   102|
-|17    |    E3_ALU_Control                                                |ALU_Control                   |    73|
-|18    |  E4_MEM                                                          |Etapa4_MEM                    |    32|
-|19    |  adder_ID_JALR_JAL                                               |Adder                         |     1|
+|1     |top                                                               |                              |  3333|
+|2     |  clk_50M                                                         |clk_wiz_0                     |     5|
+|3     |    inst                                                          |clk_wiz_0_clk_wiz             |     5|
+|4     |  Contador_Clk                                                    |contador_clk                  |    21|
+|5     |  E1_Halt                                                         |Unidad_halt                   |     3|
+|6     |  E1_IF                                                           |Etapa1_IF                     |   783|
+|7     |    InstrMem                                                      |Instruction_memory            |     1|
+|8     |      U0                                                          |blk_mem_gen_v8_4_0            |     1|
+|9     |        inst_blk_mem_gen                                          |blk_mem_gen_v8_4_0_synth      |     1|
+|10    |          \gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen  |blk_mem_gen_top               |     1|
+|11    |            \valid.cstr                                           |blk_mem_gen_generic_cstr      |     1|
+|12    |              \ramloop[0].ram.r                                   |blk_mem_gen_prim_width        |     1|
+|13    |                \prim_init.ram                                    |blk_mem_gen_prim_wrapper_init |     1|
+|14    |    PC                                                            |ProgramCounter                |    76|
+|15    |    adder_IF                                                      |Adder_1                       |    95|
+|16    |  E2_ID                                                           |Etapa2_ID                     |  2263|
+|17    |    Regs                                                          |Registers                     |  2263|
+|18    |  E2_ID_Modulo_Saltos                                             |Etapa2_ID_Modulo_Saltos       |    11|
+|19    |    adder_id                                                      |Adder_0                       |     8|
+|20    |    comparador_reg_ID                                             |Comparador_registros          |     3|
+|21    |  E3_EX                                                           |Etapa3_EX                     |   176|
+|22    |    E3_ALU                                                        |ALU                           |   102|
+|23    |    E3_ALU_Control                                                |ALU_Control                   |    74|
+|24    |  E4_MEM                                                          |Etapa4_MEM                    |    32|
+|25    |  adder_ID_JALR_JAL                                               |Adder                         |     8|
 +------+------------------------------------------------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 782.324 ; gain = 484.727
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 319 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:02:20 . Memory (MB): peak = 849.090 ; gain = 397.133
-Synthesis Optimization Complete : Time (s): cpu = 00:02:25 ; elapsed = 00:02:27 . Memory (MB): peak = 849.090 ; gain = 551.855
+Synthesis finished with 0 errors, 0 critical warnings and 289 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:59 . Memory (MB): peak = 782.324 ; gain = 353.512
+Synthesis Optimization Complete : Time (s): cpu = 00:02:05 ; elapsed = 00:02:07 . Memory (MB): peak = 782.324 ; gain = 484.727
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 375 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 1425 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 5 instances were transformed.
-  LDC => LDCE: 5 instances
+  A total of 1030 instances were transformed.
+  LDC => LDCE: 1025 instances
+  LDC => LDCE (inverted pins: G): 5 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-134 Infos, 181 Warnings, 0 Critical Warnings and 0 Errors encountered.
+134 Infos, 146 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:30 . Memory (MB): peak = 849.090 ; gain = 560.117
-INFO: [Common 17-1381] The checkpoint 'E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/tp_final_pipeline_monociclo.runs/synth_1/pipeline_monociclo_sintesis.dcp' has been generated.
+synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:09 . Memory (MB): peak = 789.844 ; gain = 500.953
+INFO: [Common 17-1381] The checkpoint 'E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/tp_final_pipeline_monociclo.runs/synth_1/pipeline_monociclo_sintesis.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file pipeline_monociclo_sintesis_utilization_synth.rpt -pb pipeline_monociclo_sintesis_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.060 . Memory (MB): peak = 849.090 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 23 02:14:43 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 789.844 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 27 00:36:01 2020...

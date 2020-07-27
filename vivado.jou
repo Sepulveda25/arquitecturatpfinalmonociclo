@@ -107,3 +107,7 @@ export_simulation -of_objects [get_files {{E:/Facultad/Arquitectura de Computado
 relaunch_sim
 relaunch_sim
 save_wave_config {E:/Facultad/Arquitectura de Computadoras/Practicos Vivado/tp_final_pipeline_monociclo/arquitecturatpfinalmonociclo/test_pipeline_monociclo_behav.wcfg}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
