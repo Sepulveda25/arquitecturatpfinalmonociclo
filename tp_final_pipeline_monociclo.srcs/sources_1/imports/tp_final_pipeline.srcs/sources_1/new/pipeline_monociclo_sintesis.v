@@ -165,9 +165,9 @@ Etapa2_ID E2_ID(    //Inputs 9
 reg [31:0] InputB_Adder=4;
 reg [4:0] JAL_RD_31=31;
 //Adder de la etapa 2: Suma 4 en al PC para calcula direccion de retorno de las instrucciones JALR y JAL"
-Adder #(.LEN(32)) adder_ID_JALR_JAL (   .InputA(E1_AddOut), //.InputA(Latch_IF_ID_Adder_Out), 
-                                        .InputB(InputB_Adder), 
-                                        .Out(ADDER_E2_PC_JALR_JAL));
+//Adder #(.LEN(32)) adder_ID_JALR_JAL (   .InputA(E1_AddOut), //.InputA(Latch_IF_ID_Adder_Out), 
+//                                        .InputB(InputB_Adder), 
+//                                        .Out(ADDER_E2_PC_JALR_JAL));
 //Este mux es para seleccionar la direccion rd en caso que la instruccion sea JAL 
 MUX #(.LEN(5)) mux_JAL(  //Inputs
                             .InputA(E1_InstrOut[15:11]),//.InputA(Latch_IF_ID_InstrOut[15:11]), // 0
@@ -245,7 +245,7 @@ assign JALR_or_JAL = flags_branch_jump[2] | flags_branch_jump[0];
 
 Triple_MUX #(.LEN(32)) Mux_WB_JALR_JAL_PC(   //Inputs
                                    .InputA(E3_ALUOut),//00
-                                   .InputB(ADDER_E2_PC_JALR_JAL),//10                
+                                   .InputB(E1_AddOut),//.InputB(ADDER_E2_PC_JALR_JAL),//10                
                                    .InputC(E4_DataOut_to_Latch_MEM_WB),//01                         
                                    .SEL({JALR_or_JAL,ControlFLAGS[6]}),                             
                                    //Output
